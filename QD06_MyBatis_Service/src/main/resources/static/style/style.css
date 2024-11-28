@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 326px;
+  padding: 20px 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+form#loginFrm {
+	width: 100%;
+/* 	border: 1px solid #000; */
+}
+
+form#loginFrm h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+form#loginFrm p {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 20px 0 6px;
+}
+
+form#loginFrm input {
+	width: 300px;
+	font-size: 17px;
+	padding: 8px 12px;
+}
+
+#loginFrm div#btnArea {
+	margin: 20px 0 0;
+}
+#loginFrm div#btnArea>button,
+#joinFrm div#btnArea>button {
+	width: 100%;
+	height: 45px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	
+	border: none;
+	border-radius: 22px;
+	background-color: #03b070;
+	cursor: pointer;
+}
+
+
+/* 회원가입 시작 */
+form#joinFrm div#joinChkBoxArea {
+	text-align: left;
+	margin: 10px 0;
+} 
+form#joinFrm div#joinChkBoxArea input {
+	width: 17px;
+	height: 17px;
+}
+
+
+/* 개발자 지원서 시작 */
+div#wrap.applyWrap {
+	width: 350px;
+}
+
+#wrap.applyWrap h1 {
+	text-align: center;
+}
+
+#wrap.applyWrap hr {
+	margin: 10px 0;
+}
+
+form#applyForm fieldset {
+	border: none;
+	margin: 8px 0 3px;
+}
+form#applyForm fieldset legend {
+	font-weight: bold;
+}
+form#applyForm label {
+/* 	border: 1px solid #000; */
+	margin: 6px 0 6px 45px;
+	display: block;
+}
+
+form#applyForm label span {
+	width: 50px;
+	display: inline-block;
+}
+
+form#applyForm label span+input {
+	font-size: 16px;
+	padding: 3px 0 4px 6px;
+}
+
+fieldset#applyFieldset input[type=radio] {
+	width: 14px;
+	height: 14px;
+	transform: translateY(2px);
+}
+
+
+fieldset#motiveFieldset textarea {
+	width: 100%;
+	height: 70px;
+	
+	padding: 8px;
+}
+
+form#applyForm button {
+	font-size: 13px;
+	font-weight: bold;
+	padding: 4px 8px;
+	margin-right: 6px;
+	cursor: pointer;
+}
+
+
+/* 지원서 목록 출력 */
+div#wrap.listWrap {
+	width: 600px;
+}
+#wrap.listWrap header#header {
+	padding: 0 30px 0 60px;
+	margin-bottom: 15px;
+	justify-content: space-between;
+}
+#wrap.listWrap header#header h1 {
+	font-size: 26px;
+}
+
+#wrap.listWrap header#header button {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 4px 20px;
+	cursor: pointer;
+}
+
+
+#wrap.listWrap div#headerRow {
+	border-bottom: 2px solid #eee;
+	background-color: rgba(0, 136, 255, 0.1);
+}
+#wrap.listWrap div#headerRow span {
+/* 	font-weight: bold; */
+	text-align: center;
+	padding: 8px 0;
+}
+#wrap.listWrap div.listCol span:nth-child(1) {
+	width: 40px;
+}
+#wrap.listWrap div.listCol span:nth-child(2) {
+	width: 80px;
+}
+#wrap.listWrap div.listCol span:nth-child(3) {
+	width: 120px;
+}
+#wrap.listWrap div.listCol span:nth-child(4) {
+	width: 100px;
+}
+#wrap.listWrap div.listCol span:nth-child(5) {
+	flex: 1;
+}
+#wrap.listWrap div.listCol span:nth-child(6) {
+	width: 120px;
+}
+
+#wrap.listWrap div.dataRow span {
+	font-size: 14px;
+	text-align: center;
+	padding: 8px 0;
+	border-bottom: 1px solid #aaa;
+}
+
+#wrap.listWrap div.dataRow:hover {
+	background-color: rgba(128, 128, 128, 0.1);
+	cursor: pointer;
+}
+
+/* width가 적용된 범위를 초과하는 내용 말줄임표 적용 */
+#wrap.listWrap div.dataRow span.wordWrap {	
+  white-space: nowrap;
+/*   width: 200px; */
+/*   border: 1px solid #000000; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+/* 상세내용보기 시작 */
+div#wrap.resWrap h1 {
+	font-size: 24px;
+}
+div#wrap.resWrap hr {
+	margin: 10px 0;
+}
+div#wrap.resWrap div.res {
+	line-height: 40px;
+}
+div#wrap.resWrap div#btnArea {
+	text-align: center;
+	margin-top: 20px;
+}
+div#wrap.resWrap div#btnArea button {
+	width: 80px;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 2px 0px;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+
+
+
+
