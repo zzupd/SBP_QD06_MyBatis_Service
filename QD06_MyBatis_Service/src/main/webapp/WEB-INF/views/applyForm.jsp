@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="wrap" class="applyWrap">
-		<h1>개발자 지원서</h1>
+		<h1>개발자 지원서(SVC)</h1>
 		<hr>
 		
 		<form action="/applyProc" id="applyForm">

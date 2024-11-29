@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="wrap" class="resWrap">
-		<h1>${applyDto.userName} 지원 정보</h1>
+		<h1>${applyDto.userName} 지원 정보(SVC)</h1>
 		<hr>
 		
 		

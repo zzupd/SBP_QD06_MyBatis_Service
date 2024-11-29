@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="wrap" class="applyWrap">
-		<h1>개발자 지원서 수정</h1>
+		<h1>개발자 지원서 수정(SVC)</h1>
 		<hr>
 		
 		<form action="/modProc" id="applyForm">
@@ -52,7 +52,7 @@
 			</fieldset>	
 			<div id="btnArea">
 				<input type="hidden" name="numParam" value="${applyDto.num }">
-				<button>접수하기</button>
+				<button>수정하기</button>
 				<button type="reset">다시 쓰기</button>
 				<button type="button" id="goListBtn">리스트</button>
 			</div>

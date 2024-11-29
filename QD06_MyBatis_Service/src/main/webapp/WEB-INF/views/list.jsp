@@ -12,7 +12,7 @@
 <body>
 	<div id="wrap" class="listWrap">
 		<header id="header" class="dFlex">
-			<h1>지원 정보 리스트</h1>
+			<h1>지원 정보 리스트(SVC)</h1>
 			<div id="headerBtnArea">
 				<button type="button" id="insFormBtn">입력</button>
 			</div>

@@ -15,14 +15,16 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.qd04.dao.ApplyDao;
 import com.qd04.dto.ApplyDto;
+import com.qd04.svc.ApplyService;
 
 import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
 public class MainController {
+
 	
 	@Autowired
-	private ApplyDao applyDao;
+	private ApplyService applyService;
 
 	
 	@GetMapping("/")
@@ -36,7 +38,6 @@ public class MainController {
 	public String applyForm() {
 		return "applyForm";
 	}
-	
 	
 	
 	// 지원서 DB 입력처리
@@ -55,7 +56,7 @@ public class MainController {
 		map.put("applyPart", applyPart);
 		map.put("applyMotive", applyMotive);
 		
-		applyDao.mtdRegProc(map);
+		applyService.mtdRegProc(map);
 		
 		redAttr.addAttribute("userName", userName);
 		redAttr.addAttribute("userPhone", userPhone);
@@ -69,7 +70,7 @@ public class MainController {
 	// 목록출력
 	@RequestMapping("/list")
 	public String list(Model model) {
-		model.addAttribute("mtdList", applyDao.mtdList());
+		model.addAttribute("mtdList", applyService.mtdList());
 		return "list";
 	}
 	
@@ -81,7 +82,7 @@ public class MainController {
 			Model model
 			) {
 
-		ApplyDto applyDto = applyDao.mtdView(numParam);
+		ApplyDto applyDto = applyService.mtdView(numParam);
 		
 		model.addAttribute("applyDto", applyDto);
 		
@@ -96,7 +97,7 @@ public class MainController {
 		try {
 			req.setCharacterEncoding("UTF-8");
 			String num = req.getParameter("numParam");
-			ApplyDto applyDto = applyDao.mtdView(num);
+			ApplyDto applyDto = applyService.mtdView(num);
 			model.addAttribute("applyDto", applyDto);
 		} catch (UnsupportedEncodingException e) {
 			System.out.println("UnEnc : " + e.getMessage());
@@ -121,7 +122,7 @@ public class MainController {
 		map.put("applyPart", applyPart);
 		map.put("applyMotive", applyMotive);
 		
-		applyDao.mtdModProc(map);
+		applyService.mtdModProc(map);
 		
 		redAttr.addAttribute("numParam", numParam);
 		
